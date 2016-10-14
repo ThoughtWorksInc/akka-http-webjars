@@ -1,4 +1,4 @@
-package com.thoughtworks.ceo.server
+package com.thoughtworks.akka.http
 
 import akka.http.scaladsl.server.Directives._
 import org.webjars.WebJarAssetLocator
