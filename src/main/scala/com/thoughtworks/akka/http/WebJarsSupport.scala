@@ -9,7 +9,7 @@ import scala.util.{Failure, Success, Try}
   * @author 杨博 (Yang Bo) &lt;pop.atry@gmail.com&gt;
   */
 trait WebJarsSupport {
-  protected val webJarAssetLocator = new WebJarAssetLocator
+  val webJarAssetLocator = new WebJarAssetLocator
 
   final def webJars = {
     extractUnmatchedPath { path =>
