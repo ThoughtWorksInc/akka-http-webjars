@@ -1,6 +1,7 @@
 package com.thoughtworks.akka.http
 
 import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.server.Route
 import org.webjars.WebJarAssetLocator
 
 import scala.util.{Failure, Success, Try}
@@ -11,7 +12,7 @@ import scala.util.{Failure, Success, Try}
 trait WebJarsSupport {
   val webJarAssetLocator = new WebJarAssetLocator
 
-  final def webJars = {
+  final def webJars: Route = {
     extractUnmatchedPath { path =>
       Try(webJarAssetLocator.getFullPath(path.toString)) match {
         case Success(fullPath) =>
