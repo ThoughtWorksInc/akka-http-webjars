@@ -4,7 +4,7 @@ organization in ThisBuild := "com.thoughtworks.akka-http-webjars"
 
 scalaVersion in ThisBuild := currentScalaVersion
 
-crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.13.3")
+crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.12.3")
 
 libraryDependencies += "org.webjars" % "webjars-locator" % "0.32"
 
