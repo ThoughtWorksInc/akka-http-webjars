@@ -1,4 +1,4 @@
-package com.thoughtworks.modularizer.server
+package com.thoughtworks.akka.http
 
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
