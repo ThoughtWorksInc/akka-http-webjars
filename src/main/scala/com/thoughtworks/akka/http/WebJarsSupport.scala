@@ -12,7 +12,7 @@ import scala.util.{Failure, Success, Try}
 trait WebJarsSupport {
   val webJarAssetLocator = new WebJarAssetLocator
 
-  final def sbtWebLayout: Route = {
+  final def sbtWeb: Route = {
     pathPrefix("lib") {
       pathPrefix(Segment) {
         webJars
